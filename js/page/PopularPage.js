@@ -1,24 +1,42 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import { createMaterialTopTabNavigator } from 'react-navigation-tabs'
+import { createAppContainer } from 'react-navigation'
 
 export default class PopularPage extends Component {
     render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    PopularPage
-                </Text>
-            </View>
-        )
+        const TabNavigator = createAppContainer(createMaterialTopTabNavigator({
+            PopularTab1: {
+                screen: PopularTab,
+                navigationOptions: {
+                    title: 'Tab1',
+                }
+            },
+            PopularTab2: {
+                screen: PopularTab,
+                navigationOptions: {
+                    title: 'Tab1',
+                }
+            }
+        }));
+        return <View style={styles.container}>
+            <TabNavigator />
+        </View>
+    }
+}
+
+class PopularTab extends Component {
+    render() {
+        return <View style={styles.container}>
+            <Text>PopularTab</Text>
+        </View>
     }
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        marginTop: 30
     },
     welcome: {
         fontSize: 20,
