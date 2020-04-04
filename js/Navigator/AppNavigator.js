@@ -26,6 +26,7 @@ const MainNavigator = createStackNavigator(
 )
 
 export default createAppContainer(createSwitchNavigator({
+    //首个Navigator即默认展示的页面
     Init: InitNavigator,
     Main: MainNavigator,
 }, {

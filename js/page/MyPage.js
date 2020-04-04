@@ -6,7 +6,7 @@ export default class MyPage extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    PopularPage
+                    MyPage
                 </Text>
             </View>
         )

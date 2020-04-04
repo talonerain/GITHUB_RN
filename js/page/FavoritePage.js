@@ -6,7 +6,7 @@ export default class FavoritePage extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    PopularPage
+                    FavoritePage
                 </Text>
             </View>
         )
