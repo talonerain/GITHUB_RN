@@ -75,6 +75,9 @@ const TABS = {
     }
 }
 
+/**
+ * 动态导航器
+ */
 export default class DynamicTabNavigator extends Component {
     constructor(props) {
         super(props)
@@ -125,7 +128,9 @@ class TabBarCompnent extends Component {
             }
         }
         return <BottomTabBar
+            //保留之前属性
             {...this.props}
+            //覆盖属性
             activeTintColor={this.theme.tintColor || this.props.tintColor}
         />
     }
