@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DynamicTabNavigator from '../Navigator/DynamicNavigator';
-import NavigationUtil from '../Navigator/NavigationUtil';
+import DynamicTabNavigator from '../navigator/DynamicNavigator';
+import NavigationUtil from '../navigator/NavigationUtil';
 
 export default class HomePage extends Component {
     render() {

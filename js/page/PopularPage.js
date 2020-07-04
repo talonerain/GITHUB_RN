@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { createMaterialTopTabNavigator } from 'react-navigation-tabs'
 import { createAppContainer } from 'react-navigation'
-import NavigationUtil from '../Navigator/NavigationUtil'
+import NavigationUtil from '../navigator/NavigationUtil'
 
 export default class PopularPage extends Component {
     constructor(props) {
