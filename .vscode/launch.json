@@ -8,7 +8,8 @@
       "name": "Attach to packager",
       "cwd": "${workspaceFolder}",
       "type": "reactnative",
-      "request": "attach"
+      "request": "attach",
+      "sourceMaps": true
     },
     {
       "name": "Debug Android (Hermes) - Experimental",
@@ -29,14 +30,16 @@
       "cwd": "${workspaceFolder}",
       "type": "reactnative",
       "request": "launch",
-      "platform": "android"
+      "platform": "android",
+      "sourceMaps": true
     },
     {
       "name": "Debug iOS",
       "cwd": "${workspaceFolder}",
       "type": "reactnative",
       "request": "launch",
-      "platform": "ios"
+      "platform": "ios",
+      "sourceMaps": true
     }
   ]
 }
